@@ -23,11 +23,10 @@
       <param from="$(find-pkg-share uuv_control_cascaded_pid)/config/$(var model_name)/vel_pid_control.yaml"/>
     </node>
   </group>
-
-  <include file="$(find-pkg-share uuv_teleop)/launch/uuv_keyboard_teleop.launch">
-    <arg name="uuv_name" value="$(var uuv_name)"/>
-    <arg name="output_topic" value="cmd_vel"/>
-    <arg name="message_type" value="twist"/>
-  </include>
+  
+  <node pkg="teleop_twist_keyboard" exec="teleop_twist_keyboard" name="teleop_twist_keyboard"
+      output="screen" launch-prefix="xterm -e">
+    <remap from="cmd_vel" to="/$(var uuv_name)/cmd_vel"/>
+  </node>
 
 </launch>
