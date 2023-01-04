@@ -51,4 +51,11 @@
         </node>
     </group>
 
+    <node pkg="rviz2"
+          exec="rviz2"
+          name="rviz2"
+          output="screen"
+          args="-d $(find-pkg-share uuv_tutorial_dp_controller)/rviz/rexrov_auv_config.rviz">
+    </node>
+
 </launch>

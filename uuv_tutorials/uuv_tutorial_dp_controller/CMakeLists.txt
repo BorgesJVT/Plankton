@@ -6,7 +6,7 @@ find_package(ament_cmake REQUIRED)
 install(PROGRAMS scripts/tutorial_dp_controller.py
   DESTINATION lib/${PROJECT_NAME})
 
-install(DIRECTORY launch
+install(DIRECTORY launch rviz
   DESTINATION share/${PROJECT_NAME}
   PATTERN "*~"
   EXCLUDE)
