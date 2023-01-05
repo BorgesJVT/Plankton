@@ -45,7 +45,7 @@
   <xacro:property name="mass" value="1862.87"/>
 
   <xacro:macro name="rexrov_base" params="namespace *gazebo inertial_reference_frame">
-    <!-- base_link according to ROS conventions: x forward, z up -->
+    <!-- x forward, z up -->
     <link name="${namespace}/base_link">
       <inertial>
         <mass value="${mass}"/>
@@ -85,7 +85,7 @@
     <!-- Set up hydrodynamic plugin given as input parameter -->
     <xacro:insert_block name="gazebo"/>
 
-    <!-- optional: plugin to test compare Gazebo returned accelerations
+    <!-- (optional) plugin to test compare Gazebo returned accelerations
     <gazebo>
       <plugin name="${namespace}_test_plugin" filename="libuuv_accelerations_test_plugin.so">
         <link_name>${namespace}/base_link</link_name>

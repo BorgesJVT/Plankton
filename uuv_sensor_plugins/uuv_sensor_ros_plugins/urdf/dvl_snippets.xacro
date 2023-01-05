@@ -200,11 +200,11 @@
     <gazebo>
       <plugin filename="libuuv_gazebo_ros_dvl_plugin.so" name="libuuv_gazebo_dvl${suffix}_plugin">
         <ros>
-          <namespace>${namespace}</namespace> <!-- (string, required): ros namespace in which the messages are published -->
+          <namespace>${namespace}</namespace> <!-- (string, required) ros namespace in which the messages are published -->
         </ros>
         <!-- <robot_namespace>${namespace}</robot_namespace>  -->
-        <link_name>${namespace}/dvl${suffix}_link</link_name> <!-- (string, required): name of the body which holds the IMU sensor -->
-        <sensor_topic>${topic}</sensor_topic> <!-- (string): name of the sensor output topic and prefix of service names -->
+        <link_name>${namespace}/dvl${suffix}_link</link_name> <!-- (string, required) name of the body which holds the IMU sensor -->
+        <sensor_topic>${topic}</sensor_topic> <!-- (string) name of the sensor output topic and prefix of service names -->
         <update_rate>${update_rate}</update_rate> <!-- Update period [s] -->
         <noise_sigma>${noise_sigma}</noise_sigma> <!-- std dev of position estimates in x, y, z [m/s] -->
         <noise_amplitude>${noise_amplitude}</noise_amplitude>

@@ -100,7 +100,7 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
       </xacro:box_inertial>
       <collision>
-        <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+        <!-- (todo) gazebo needs a collision volume or it will ignore the pose of
            the joint that leads to this link (and assume it to be the identity) -->
         <geometry>
           <cylinder length="0.000001" radius="0.000001"/>
@@ -204,7 +204,7 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
       </xacro:box_inertial>
       <collision>
-        <!-- todo: gazebo needs a collision volume or it will ignore the pose of
+        <!-- (todo) gazebo needs a collision volume or it will ignore the pose of
            the joint that leads to this link (and assume it to be the identity) -->
         <geometry>
           <cylinder length="0.000001" radius="0.000001"/>

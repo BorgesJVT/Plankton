@@ -44,7 +44,7 @@
             <center_of_buoyancy>${cob}</center_of_buoyancy>
             <hydrodynamic_model>
                 <type>fossen</type>
-                <!-- Added mass: see p.28 in Berg2012 -->
+                <!-- For added mass, see p.28 in Berg2012 -->
                 <added_mass>
                      779.79 -6.8773 -103.32  8.5426 -165.54 -7.8033
                     -6.8773    1222   51.29  409.44 -5.8488  62.726
@@ -53,11 +53,11 @@
                     -165.54 -5.8488 -386.42 -10.027  842.69 -1.1162
                     -7.8033  62.726  10.775  21.019 -1.1162  224.32
                 </added_mass>
-                <!-- Linear damping: see p.31 in Berg2012 -->
+                <!-- For linear damping, see p.31 in Berg2012 -->
                 <linear_damping>
                     -74.82 -69.48 -728.4 -268.8 -309.77 -105
                 </linear_damping>
-                <!-- Non-linear damping: see p.30 in Berg2012 -->
+                <!-- For non-linear damping, see p.30 in Berg2012 -->
                 <quadratic_damping>
                     -748.22 -992.53 -1821.01 -672 -774.44 -523.27
                 </quadratic_damping>
